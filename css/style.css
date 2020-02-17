@@ -9,6 +9,7 @@ body {
     height: 100vh;
 
     background-size: cover;
+    background-color: #218AD1;
     background-repeat: no-repeat;
     background-image: url("../images/background.png");
 }
