@@ -78,6 +78,12 @@ header nav > ul {
     letter-spacing: 1.5px;
 }
 
+.content > .wrapper .call-to-action > .subscriptions-soon {
+    font-size: 20px;
+    color: #FFE666;
+    font-weight: 600;
+}
+
 .content > .wrapper .call-to-action > .primary-btn {
     font-size: 24px;
 }
@@ -136,6 +142,10 @@ header nav > ul {
         text-align: center;
     }
 
+    .content > .wrapper .call-to-action > .subscriptions-soon {
+        font-size: 18px;
+    }
+
     .content > .wrapper .call-to-action > .primary-btn {
         font-size: 20px;
     }
@@ -159,6 +169,10 @@ header nav > ul {
     .content > .wrapper .date-n-local .local {
         font-size: 16px;
         line-height: 28px;
+    }
+
+    .content > .wrapper .call-to-action > .subscriptions-soon {
+        font-size: 18px;
     }
 
     .content > .wrapper .call-to-action > .primary-btn {
