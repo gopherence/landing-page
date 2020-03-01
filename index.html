@@ -6,52 +6,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, scalable=no, shrink-to-fit=no" />
 
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet" />
+
         <link rel="stylesheet" href="css/normalize.css" />
+
         <link rel="stylesheet" href="css/aos.min.css" />
+        <link rel="stylesheet" href="css/flexboxgrid.min.css" />
 
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <div class="site-wrapper">
-            <header>
-                <div class="wrapper">
-                    <div class="logo">
-                        <img src="./images/lgoo.png" />
+        <div class="banner">
+            <div class="wrapper container-fluid row top-xs middle-md">
+                <div class="info col-xs-12">
+                    <div class="row center-xs start-md">
+                        <div class="col-xs-12 title" data-aos="fade-up" data-aos-delay="100">Gopherence</div>
+                        <div class="col-xs-12 description" data-aos="fade-up" data-aos-delay="100">O maior meetup em linha reta</div>
                     </div>
-                    <!-- <nav>
-                        <ul>
-                            <li><a href="#" class="primary-btn">INSCREVER-SE</a></li>
-                        </ul>
-                    </nav> -->
-                </div>
-            </header>
 
-            <div class="content">
-                <div class="wrapper">
-                    <div data-aos="fade-up" data-aos-delay="100">
-                        <span class="title">O maior meetup</span>
-                        <span class="title">em linha reta</span>
+                    <div class="row center-xs start-md">
+                        <div class="col-xs-12 save-the-date" data-aos="fade-up" data-aos-delay="200">Save the date</div>
+                        <div class="col-xs-12 date" data-aos="fade-up" data-aos-delay="200">25 de Março 2020 • 19h</div>
+                        <div class="col-xs-12 local" data-aos="fade-up" data-aos-delay="300">Recife • Paço Alfândega</div>
                     </div>
-                    <i class="save-the-date" data-aos="fade-up" data-aos-delay="200">SAVE THE DATE</i>
-                    <div class="date-n-local" data-aos="fade-up" data-aos-delay="300">
-                        <span class="date">25 de Março 2020 • 19H</span>
-                        <span class="local">Recife • PAÇO ALFÂNDEGA</span>
-                    </div>
-                    <div class="call-to-action" data-aos="fade-up" data-aos-delay="500">
-                        <span class="subscriptions-soon">INSCRIÇÕES EM BREVE</span>
-                        <!-- <a href="#" class="primary-btn large">Quero me inscrever</a> -->
+
+                    <div class="row center-xs start-md">
+                        <div class="col-xs-12 subscriptions-soon" data-aos="fade-up" data-aos-delay="400">Inscrições em breve</div>
                     </div>
                 </div>
             </div>
         </div>
 
         <script src="js/aos.min.js"></script>
+
         <script>
-            AOS.init({
-                duration: 800,
-                easing: "slide",
-                once: true
-            });
+            AOS.init();
         </script>
     </body>
 </html>
