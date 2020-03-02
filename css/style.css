@@ -30,6 +30,10 @@ body {
     padding: 1rem 0;
 }
 
+.text-section {
+    text-align: center;
+}
+
 .info .title,
 .info .save-the-date,
 .info .local {
@@ -42,24 +46,87 @@ body {
     color: #0090C9;
 }
 
-.info .title {
-    font-size: 64px;
-    line-height: 90px;
+@media (orientation: portrait) {
+    .wrapper {
+        align-items: flex-start !important;
+    }
+
+    .text-section {
+        text-align: center !important;
+    }
+
+    .info .title {
+        font-size: 15vw;
+        line-height: 8vh;
+    }
+
+    .info .save-the-date {
+        font-size: 10vw;
+        margin-top: 2vh;
+    }
+
+    .info .description,
+    .info .date,
+    .info .local,
+    .info .subscriptions-soon {
+        font-size: 5.5vw;
+        line-height: 4vh;
+    }
 }
 
-.info .description {
-    font-size: 24px;
+@media (orientation: landscape) {
+    .wrapper {
+        align-items: center;
+    }
+
+    .text-section {
+        text-align: left;
+    }
+
+    .info .title {
+        font-size: 15vh;
+        line-height: 8vw;
+    }
+
+    .info .save-the-date {
+        font-size: 10vh;
+        margin-top: 2vw;
+    }
+
+    .info .description,
+    .info .date,
+    .info .local,
+    .info .subscriptions-soon {
+        font-size: 5.5vh;
+        line-height: 4vw;
+    }
 }
 
-.info .save-the-date {
-    font-size: 43px;
-    line-height: 55px;
-    margin-top: 20px;
-}
+@media only screen and (min-width: 64em) {
+    .wrapper {
+        align-items: center;
+    }
 
-.info .date,
-.info .local,
-.info .subscriptions-soon {
-    font-size: 24px;
-    line-height: 40px;
+    .text-section {
+        text-align: left;
+    }
+
+    .info .title {
+        font-size: 64px;
+        line-height: 90px;
+    }
+
+    .info .save-the-date {
+        font-size: 43px;
+        line-height: 55px;
+        margin-top: 20px;
+    }
+
+    .info .description,
+    .info .date,
+    .info .local,
+    .info .subscriptions-soon {
+        font-size: 24px;
+        line-height: 40px;
+    }
 }
