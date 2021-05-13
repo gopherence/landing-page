@@ -167,6 +167,7 @@ body {
 }
 
 .content .lecture .info-container .title {
+  display: block;
   font-size: 30px;
 }
 
