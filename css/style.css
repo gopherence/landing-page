@@ -1,132 +1,304 @@
 @font-face {
-    font-weight: normal;
-    font-family: "Concert One";
-    src: url(../fonts/ConcertOne-Regular.ttf);
+  font-weight: normal;
+  font-family: "Concert One";
+  src: url(../fonts/ConcertOne-Regular.ttf);
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "Roboto";
+  src: url(../fonts/RobotoRegular.woff2);
 }
 
 body {
-    font-family: "Concert One";
-}
-
-.banner {
-    height: 100vh;
-    display: flex;
-    text-transform: uppercase;
-
-    background-size: contain;
-    background-color: #FCEBD6;
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-image: url("../images/banner_bg.png");
+  overflow-x: hidden;
+  font-family: "Concert One";
+  background-color: #FCEBD6;
 }
 
 .wrapper {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1400px;
+  padding: 24px;
 }
 
-.info {
-    padding: 1rem 0;
+.social-media-icon {
+  color: #FF8C03;
+  cursor: pointer;
 }
 
-.text-section {
-    text-align: center;
+.header {
+  text-align: center;
 }
 
-.info .title,
-.info .save-the-date,
-.info .local {
-    color: #FF8C03;
+.banner {
+  height: 100vh;
+  display: flex;
+  position: relative;
+  text-transform: uppercase;
 }
 
-.info .description,
-.info .date,
-.info .subscriptions-soon {
-    color: #0090C9;
+.banner > .background {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-image: url("../images/banner.svg");
 }
 
-@media (orientation: portrait) {
-    .wrapper {
-        align-items: flex-start !important;
-    }
-
-    .text-section {
-        text-align: center !important;
-    }
-
-    .info .title {
-        font-size: 15vw;
-        line-height: 8vh;
-    }
-
-    .info .save-the-date {
-        font-size: 10vw;
-        margin-top: 2vh;
-    }
-
-    .info .description,
-    .info .date,
-    .info .local,
-    .info .subscriptions-soon {
-        font-size: 5.5vw;
-        line-height: 4vh;
-    }
+.banner .section .title {
+  font-size: 60px;
+  color: #FF8C03;
 }
 
-@media (orientation: landscape) {
-    .wrapper {
-        align-items: center;
-    }
+.banner .section .description {
+  font-size: 23px;
+  color: #0090C9;
+}
 
-    .text-section {
-        text-align: left;
-    }
+.banner .section .save-the-date {
+  font-size: 37px;
+  color: #FF8C03;
+}
 
-    .info .title {
-        font-size: 15vh;
-        line-height: 8vw;
-    }
+.banner .section .date,
+.banner .section .location,
+.banner .section .registrations-soon {
+  font-size: 23px;
+  line-height: 32px;
+}
 
-    .info .save-the-date {
-        font-size: 10vh;
-        margin-top: 2vw;
-    }
+.banner .section .date,
+.banner .section .location {
+  color: #0090C9;
+}
 
-    .info .description,
-    .info .date,
-    .info .local,
-    .info .subscriptions-soon {
-        font-size: 5.5vh;
-        line-height: 4vw;
-    }
+.banner .section .registrations-soon {
+  color: #FF8C03;
+}
+
+.banner .section:last-child {
+  margin-top: 15px;
+}
+
+.content .section-title {
+  text-align: center;
+}
+
+.content .section-title h1 {
+  margin: 44px 0;
+  font-size: 44px;
+  color: #FF8C03;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.content .wrapper {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content .divider {
+  width: 100%;
+  height: 6px;
+  border-radius: 4px;
+  margin-bottom: 48px;
+  background-color: #FF8C03;
+}
+
+.content .lecture {
+  display: flex;
+  flex-direction: column;
+}
+
+.content .lecture .speaker-photo-wrapper {
+  width: 162px;
+  margin: 0 auto;
+  min-height: 200px;
+  position: relative;
+}
+
+.content .lecture .speaker-photo-wrapper .speaker-photo {
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 6px solid;
+  border-radius: 50%;
+  position: absolute;
+  object-position: top;
+}
+
+.content .lecture .speaker-photo-wrapper .speaker-photo.blue {
+  border-color: #0090C9;
+}
+
+.content .lecture .speaker-photo-wrapper .speaker-photo.orange {
+  border-color: #FF8C03;
+}
+
+.content .lecture .speaker-photo-wrapper .gopher {
+  left: 120px;
+  height: 80px;
+  position: absolute;
+}
+
+.content .lecture .speaker-photo-wrapper .gopher.gopher-1 {
+  bottom: 0;
+  height: 100px;
+}
+
+.content .lecture .speaker-photo-wrapper .gopher.gopher-2 {
+  left: 110px;
+  bottom: -4px;
+  height: 90px;
+}
+
+.content .lecture .speaker-photo-wrapper .gopher.gopher-3 {
+  bottom: -10px;
+}
+
+.content .lecture .info-container {
+  flex: 1;
+}
+
+.content .lecture .info-container .title {
+  font-size: 30px;
+}
+
+.content .lecture .info-container .title.orange {
+  color: #FF8C03;
+}
+
+.content .lecture .info-container .title.blue {
+  color: #0090C9;
+}
+
+.content .lecture .info-container .description {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 48px;
+  font-family: 'Roboto';
+}
+
+.content .lecture .info-container .description.orange {
+  color: #FF8C03;
+}
+
+.content .lecture .info-container .description.blue {
+  color: #0090C9;
+}
+
+.content .sponsors {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .sponsors .sponsor img {
+  height: 60px;
+  filter: brightness(0) saturate(100%) invert(36%) sepia(97%) saturate(838%) hue-rotate(163deg) brightness(98%) contrast(101%);
+}
+
+.footer {
+  padding: 100px 0 48px;
+}
+
+.footer .social-media-wrapper {
+  width: 166px;
+  height: 45px;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 20px;
+  align-items: center;
+  background-size: contain;
+  justify-content: space-between;
+  background-position: left bottom;
+  background-image: url(../images/footer.svg);
+}
+
+.footer .social-media-wrapper .social-media-icon {
+  font-size: 22px;
+}
+
+.footer .social-media-wrapper .left-side,
+.footer .social-media-wrapper .right-side {
+  width: 50px;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
 }
 
 @media only screen and (min-width: 64em) {
-    .wrapper {
-        align-items: center;
-    }
+  .wrapper {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 
-    .text-section {
-        text-align: left;
-    }
+  .header {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    line-height: 0;
+    text-align: left;
+    position: absolute;
+  }
 
-    .info .title {
-        font-size: 64px;
-        line-height: 90px;
-    }
+  .banner > .background {
+    top: 21vh;
+    height: 90vh;
+  }
 
-    .info .save-the-date {
-        font-size: 43px;
-        line-height: 55px;
-        margin-top: 20px;
-    }
+  .banner .section:last-child {
+    top: 21vh;
+    margin-top: 24px;
+  }
 
-    .info .description,
-    .info .date,
-    .info .local,
-    .info .subscriptions-soon {
-        font-size: 24px;
-        line-height: 40px;
-    }
+  .banner .section .title {
+    font-size: 100px;
+  }
+
+  .banner .section .description {
+    font-size: 37px;
+  }
+
+  .banner .section .save-the-date {
+    font-size: 60px;
+  }
+
+  .banner .section .date,
+  .banner .section .location,
+  .banner .section .registrations-soon {
+    font-size: 37px;
+    line-height: 48px;
+  }
+
+  .content .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content .section-title h1 {
+    margin: 70px 0;
+    font-size: 70px;
+  }
+
+  .content .lecture {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .content .lecture .speaker-photo-wrapper {
+    margin: 0 60px;
+  }
+
+  .content .sponsors .sponsor img {
+    height: 100px;
+  }
 }
