@@ -64,8 +64,7 @@ body {
 }
 
 .banner .section .date,
-.banner .section .location,
-.banner .section .registrations-soon {
+.banner .section .location {
   font-size: 23px;
   line-height: 32px;
 }
@@ -75,8 +74,23 @@ body {
   color: #0090C9;
 }
 
-.banner .section .registrations-soon {
-  color: #FF8C03;
+.banner .section .register-btn {
+  font-size: 23px;
+  margin-top: 20px;
+  color: #FCEBD6;
+  line-height: 32px;
+  border-radius: 5px;
+  align-items: center;
+  display: inline-flex;
+  text-decoration: none;
+  padding: 5px 15px 15px;
+  justify-content: center;
+  background-color: #0090C9;
+  transition: background-color .2s;
+}
+
+.banner .section .register-btn:hover {
+  background-color: #3BACE2;
 }
 
 .banner .section:last-child {
@@ -87,12 +101,21 @@ body {
   text-align: center;
 }
 
-.content .section-title h1 {
-  margin: 44px 0;
-  font-size: 44px;
+.content .section-title h1,
+.content .section-title h2 {
   color: #FF8C03;
   font-weight: normal;
   text-transform: uppercase;
+}
+
+.content .section-title h1 {
+  margin: 44px 0;
+  font-size: 44px;
+}
+
+.content .section-title h2 {
+  margin: 24px 0;
+  font-size: 24px;
 }
 
 .content .wrapper {
@@ -274,10 +297,16 @@ body {
   }
 
   .banner .section .date,
-  .banner .section .location,
-  .banner .section .registrations-soon {
+  .banner .section .location {
     font-size: 37px;
     line-height: 48px;
+  }
+
+  .banner .section .register-btn {
+    font-size: 37px;
+    margin-top: 32px;
+    line-height: 48px;
+    padding: 5px 20px 20px;
   }
 
   .content .wrapper {
@@ -288,6 +317,11 @@ body {
   .content .section-title h1 {
     margin: 70px 0;
     font-size: 70px;
+  }
+
+  .content .section-title h2 {
+    margin: 38px 0;
+    font-size: 38px;
   }
 
   .content .lecture {
