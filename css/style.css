@@ -32,17 +32,8 @@ body {
 .banner {
   height: 100vh;
   display: flex;
-  position: relative;
-  text-transform: uppercase;
-}
-
-.banner > .background {
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100vh;
-  position: absolute;
   background-size: contain;
+  text-transform: uppercase;
   background-repeat: no-repeat;
   background-position: bottom right;
   background-image: url("../images/banner.svg");
@@ -76,7 +67,7 @@ body {
 
 .banner .section .register-btn {
   font-size: 23px;
-  margin-top: 20px;
+  margin-top: 26px;
   color: #FCEBD6;
   line-height: 32px;
   border-radius: 5px;
@@ -274,14 +265,9 @@ body {
     position: absolute;
   }
 
-  .banner > .background {
-    top: 21vh;
-    height: 90vh;
-  }
-
-  .banner .section:last-child {
-    top: 21vh;
-    margin-top: 24px;
+  .banner {
+    background-size: 95vh;
+    background-position: center right;
   }
 
   .banner .section .title {
@@ -304,7 +290,7 @@ body {
 
   .banner .section .register-btn {
     font-size: 37px;
-    margin-top: 32px;
+    margin-top: 40px;
     line-height: 48px;
     padding: 5px 20px 20px;
   }

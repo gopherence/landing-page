@@ -1,0 +1,19 @@
+{
+  "name": "Gopherence Meetup. O maior meetup em linha reta",
+  "short_name": "Gopherence",
+  "icons": [
+    {
+      "src": "images/favicon.io/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/favicon.io/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0090C9",
+  "background_color": "#FCEBD6",
+  "display": "standalone"
+}
