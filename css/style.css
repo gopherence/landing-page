@@ -217,7 +217,7 @@ body {
 
 .content .sponsors .sponsor img {
   height: 60px;
-  filter: brightness(0) saturate(100%) invert(36%) sepia(97%) saturate(838%) hue-rotate(163deg) brightness(98%) contrast(101%);
+  filter: /* Turn into black */ brightness(0) saturate(100%) /* Turn into #586870 */ invert(40%) sepia(21%) saturate(318%) hue-rotate(155deg) brightness(92%) contrast(90%);
 }
 
 .footer {
