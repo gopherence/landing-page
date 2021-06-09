@@ -55,7 +55,8 @@ body {
 }
 
 .banner .section .date,
-.banner .section .location {
+.banner .section .location,
+.banner .section .closed-applications {
   font-size: 23px;
   line-height: 32px;
 }
@@ -63,6 +64,10 @@ body {
 .banner .section .date,
 .banner .section .location {
   color: #0090C9;
+}
+
+.banner .section .closed-applications {
+  color: #FF8C03;
 }
 
 .banner .section .register-btn {
@@ -283,7 +288,8 @@ body {
   }
 
   .banner .section .date,
-  .banner .section .location {
+  .banner .section .location,
+  .banner .section .closed-applications {
     font-size: 37px;
     line-height: 48px;
   }
